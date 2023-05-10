@@ -4,24 +4,33 @@ body {
 }
 
 .container{
-  margin-top: 20px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  margin-left: 20px;
+  display: flex;
+  margin: 20px;
   border: 4px solid black;
-  flex-direction: row;
-  flex-wrap: wrap;
-  height: 100vh;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
 }
 .a{
   border: 3px solid red;
-  height: 120px;
+  
 }
 .b{
   border: 3px solid blue;
-  height: 210px;
+  flex-grow: 3;
+  
 }
 .c{
   border: 3px solid green;
-  height: 120px;
+}
+
+.a, .c{
+  flex-grow: 1;
+
+}
+
+@media (min-width: 600px){
+.container {flex-direction: row;
+flex-wrap: wrap;}
+.a{width: 100%;}
 }
