@@ -1,3 +1,60 @@
 body {
   background: peachpuff;
 }
+.container{
+  border: 4px solid black;
+  height: 100dvh;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-rows: repeat(3,1fr);
+  
+  grid-template-areas:
+    "a a a"
+    "b c d"
+    "e f g"
+    "h h h";
+}
+.container>div{
+  min-height: 100px;
+}
+
+.a{
+  border: 3px solid red;
+  grid-area: a;
+}
+.b{
+  border: 3px solid blue;
+  grid-area: b;
+}
+.c{
+  border: 3px solid green;
+  grid-area: c;
+}
+.d{
+  border: 3px solid orange;
+  grid-area: d;
+}
+.e{
+  border: 3px solid purple;
+  grid-area: e;
+}
+.f{
+  border: 3px solid orchid;
+  grid-area: f;
+}
+.g{
+  border: 3px solid turquoise;
+  grid-area: g;
+}
+.h{border: 3px solid white;
+   grid-area: h;
+}
+
+@media(min-width: 600px) {
+.container{
+grid-template-columns: repeat(4, 1fr);
+grid-template-areas:
+    "a a a a"
+    "b c d h"
+    "e f g h"; }
+}
