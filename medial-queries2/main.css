@@ -4,3 +4,20 @@ body {
 .container{
   border: 4px solid black;
 }
+.a{
+  border: 3px solid red;
+}
+.b{
+  border: 3px solid blue;
+}
+.c{
+  border: 3px solid green;
+}
+.d{
+  border: 3px solid orange;
+}
+.e{
+  border: 3px solid purple;}
+.f{
+  border: 3px solid orchid;
+}
